@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<title>BioTec</title>
+<link rel="icon" href="imagens/icone.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Fechar
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Inicio</a>
+
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>BioTec</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sobre</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Links Uteis<i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="http://portal.estacio.br/graduacao/administra%C3%A7%C3%A3o-bacharelado/" class="w3-bar-item w3-button">Curso Administração</a>
+      <a href="http://portal.estacio.br/graduacao/analise-e-desenvolvimento-de-sistemas/" class="w3-bar-item w3-button">Curso Análise de Sistemas</a>
+      <a href="http://inscricoes.estacio.br/?uf=&po=novahome#curso-cidade-unidade" class="w3-bar-item w3-button">Inscrição Estacio</a>
+    </div>
+  </div>
+  
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+  
+    <a href="#pricing" class="w3-bar-item w3-button">Sobre</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contato</a>
+    
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="imagens/68b7ea6f-f5a1-48b0-aa19-af7bbd90f52c.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">BioTec</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Startup</h4>
+      <h5>Criada pelos alunos do 3º e 6º periodo do curso de Administração na semana academica 2018.2.</h5>
+    </header>
+    <div class="w3-container">
+      <p>Com o suporte tecnológico dado pelos alunos do curso de Análise e desenvolvimento de sistemas. </p>
+      </p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Da instituição de ensino superior <a href="http://portal.estacio.br/">Estácio de Sá</a> de Juiz de Fora </p>
+    </footer>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<img src="http://pontobiologia.com.br/blog/wp-content/uploads/2017/10/Gest%C3%A3o_meio-ambiente.jpg" style="width:100%;min-height:350px;max-height:600px;"> 
+<div>
+</div>
+<h2>O que são biodigestores?</h2>
+<p>São equipamentos de fabricação relativamente simples, que possibilitam o reaproveitamento de detritos para gerar gás e adubo, também chamados de biogás e biofertilizantes. O biodigestor geralmente é alimentado com restos de alimentos e fezes de animais, acrescidos de água.</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+   <a href="https://http2.mlstatic.com/biodigestor-residencial-produza-biogas-e-biofertilizante-D_NQ_NP_618288-MLB26463535169_112017-F.jpg"> <img src="https://http2.mlstatic.com/biodigestor-residencial-produza-biogas-e-biofertilizante-D_NQ_NP_618288-MLB26463535169_112017-F.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  
+</div>
+
+<div class="w3-quarter">
+ <a href="https://www.abecbrasil.org.br/novo/wp-content/uploads/2017/11/biodigestores.jpg"> <img src="https://www.abecbrasil.org.br/novo/wp-content/uploads/2017/11/biodigestores.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  
+</div>
+
+<div class="w3-quarter">
+ <a href="http://jom.com.br/wp-content/uploads/2016/11/Biodigestores-04.jpg"> <img src="http://jom.com.br/wp-content/uploads/2016/11/Biodigestores-04.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  
+</div>
+
+<div class="w3-quarter">
+ <a href="http://tecnologiasocial.fbb.org.br/data/files/08/00/8F/ED/0D3BD41059C179D4BD983EA8/biodigestor%2002.jpg"> <img src="http://tecnologiasocial.fbb.org.br/data/files/08/00/8F/ED/0D3BD41059C179D4BD983EA8/biodigestor%2002.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-center w3-padding-64" id="team">
+    <div class="w3-quarter">
+ <a href="https://central3.to.gov.br/arquivo/367112_1000.jpg"> <img src="https://central3.to.gov.br/arquivo/367112_1000.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  
+</div>
+
+<div class="w3-quarter">
+  <a href="https://cdn4.ecycle.com.br/cache/images/eDicas/50-650-biodigestao-750.jpg"> <img src="https://cdn4.ecycle.com.br/cache/images/eDicas/50-650-biodigestao-750.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+
+</div>
+
+<div class="w3-quarter">
+  <a href="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia6273/29.jpg"> <img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia6273/29.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+ 
+</div>
+
+<div class="w3-quarter">
+<a href="https://http2.mlstatic.com/projeto-fossa-septica-biodigestora-facil-fazer-D_NQ_NP_639305-MLB25009636850_082016-F.jpg">  <img src="https://http2.mlstatic.com/projeto-fossa-septica-biodigestora-facil-fazer-D_NQ_NP_639305-MLB25009636850_082016-F.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  
+        </li>
+      </ul>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+
+
+	</div>
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="pricing">
+
+<div class="w3-quarter">
+<h2>Sobre a Startup:</h2>
+<p> Nosso projeto é sobre biodigestores
+ Uma forma de tornar alguns estabelecimentos, digamos "mais autosustentáveis",
+ por exemplo:
+ Restaurantes,
+ que com o próprio lixo orgânico produzido
+ geraria gás de cozinha,
+ por sua vez, alimentaria o próprio restaurante.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="http://www.ambflex.com.br/wp-content/uploads/2018/04/SUSTENTABILIDADE-COMO-AS-IND%C3%9ASTRIAS-PENSAM-NA-PROTE%C3%87%C3%83O-DO-MEIO-AMBIENTE..jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+ 
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="http://www.domalberto.edu.br/wp-content/uploads/2017/02/GEOGRAFIA-MEIO-AMBIENTE-E-SUSTENTABILIDADE-786-x-460-1.png" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="http://iscanews.ir/Media/Image/1396/10/20/636511869236454251.jpg" alt="Mountains" style="width:100%">
+  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contato</span></div>
+      
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Juiz de Fora - MG</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  bio.tec.startup@gmail.com</p>
+    </div>
+    <div class="w3-half">
+         <img src="imagens/68b7ea6f-f5a1-48b0-aa19-af7bbd90f52c.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+   
+   </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59294.51416043845!2d-43.411608761850104!3d-21.74512561724209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sestacio+jf!5e0!3m2!1spt-BR!2sbr!4v1536816339987" width="100%" height="420px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+<script>
+
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://goo.gl/maps/NNE6jVgDi8z"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>BioTec Startup</h4>
+
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Volte ao topo</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
