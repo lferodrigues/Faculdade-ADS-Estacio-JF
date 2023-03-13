@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="imagens/LOGO.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="imagens/LOGO.ico" type="image/x-icon" />
+
+</head>
+<title>Composição Muscular</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Templates.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("imagens/THERMO.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<script type="text/javascript">
+ 
+       
+       function somarValores(){
+        var s1 = document.getElementById("s1").value;
+		var s2 = document.getElementById("s2").value ;
+		var s3 =document.getElementById("s3").value ;
+		var s4 =document.getElementById("s4").value ;
+		var s5 =document.getElementById("s5").value ;
+		var s6 = ( (parseFloat(s1) + parseFloat(s2) +parseFloat(s5))) ;
+        var calcular =( (parseFloat(" 1.10938") - parseFloat(" 0.0008267") * parseFloat(s6)) + (parseFloat(" 0.0000016") * parseFloat(s6)) * parseFloat("2") -(parseFloat(" 0.0002574") * parseFloat(s3)) ) ;
+		var gordura = ( ((parseFloat("4.95") / parseFloat(calcular)) - parseFloat("4.50") ) * parseFloat("100") );
+		var ga =( ( (parseFloat(s4) * parseFloat(gordura)) / parseFloat("100") ) );
+		var mm = (parseFloat(s4) - parseFloat(ga));
+		 var ci = (parseFloat(mm)/ parseFloat("0.85"));
+		 var x2 = ((parseFloat(mm) - parseFloat(ci)));
+        alert('Percentual de gordura: '+gordura.toFixed('2')+" % "+ 'Gordura Absoluta :' +ga.toFixed('2') + 'KG ' +'Massa Magra:'+mm.toFixed('2')+'KG '+ 'Massa do corpo ideal:'+ci.toFixed('2')+ 'KG ' + 'Clique em Ok para sair');
+		return false;
+    
+    
+    }
+
+
+
+
+
+
+
+
+</script>
+<script type="text/javascript">
+ 
+       
+       function somarValores1(){
+        var a1 = document.getElementById("a1").value;
+		var a2 = document.getElementById("a2").value ;
+		var a3 =document.getElementById("a3").value ;
+		var a4 =document.getElementById("a4").value ;
+		var a5 =document.getElementById("a5").value ;
+		var a6 = ( (parseFloat(a1) + parseFloat(a2) +parseFloat(a5))) ;
+        var calcular =( (parseFloat("1.09942") - parseFloat("0.0009929") * parseFloat(a6)) + (parseFloat("0.0000023") * parseFloat(a6)) * parseFloat("2") -(parseFloat("0.0001392") * parseFloat(a3)) ) ;
+		var gordura = ( ((parseFloat("4.95") / parseFloat(calcular)) - parseFloat("4.50") ) * parseFloat("100") );
+		var ga =( ( (parseFloat(a4) * parseFloat(gordura)) / parseFloat("100") ) );
+		var mm = (parseFloat(a4) - parseFloat(ga));
+		 var ci = (parseFloat(mm)/ parseFloat("0.75"));
+		 var x2 = ((parseFloat(mm) - parseFloat(ci)));
+        alert('Percentual de gordura: '+gordura.toFixed('2')+" % "+ 'Gordura Absoluta :' +ga.toFixed('2') + 'KG ' +'Massa Magra:'+mm.toFixed('2')+'KG '+ 'Massa do corpo ideal:'+ci.toFixed('2')+ 'KG ' + 'Clique em Ok para sair');
+		return false;
+    
+    
+    }
+
+
+
+
+
+
+
+
+</script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="https://ferodrigues.github.io/ads/#home" class="w3-bar-item w3-button w3-wide"><img class="w3-image w3-round-large" src="imagens/Sem T+-ítulo-1.png" alt="Home" width="80" height="60" ></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="https://ferodrigues.github.io/ads/#about" class="w3-bar-item w3-button">Sobre</a>
+      <a href="https://ferodrigues.github.io/ads/#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Biografia</a>
+      <a href="https://ferodrigues.github.io/ads/#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contato</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Sobre</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Biografia</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Galeria</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contato</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">LFR_System</span><br>
+  <span class="w3-xxlarge w3-hide-large w3-hide-medium">LFR_System</span><br>
+    <span class="w3-large">Você, a um click do mundo!</span>
+    <p><a href="#calculator" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Calculadora</a></p>
+  </div>
+<nav>  
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+   <a <i <a class="fa fa-facebook-official w3-hover-opacity"href="https://www.facebook.com/lfmorcegao"</a> </a> </i>
+   <a <i <a class="fa fa-instagram w3-hover-opacity"href="https://www.instagram.com/lfr_murcegao/"</a> </a></i>
+    
+  
+  <a  <i <a class="fa fa-twitter w3-hover-opacity"href="https://twitter.com/LFR_09"</a></a></i>
+   <a <i <a class="fa fa-linkedin w3-hover-opacity"href="https://www.linkedin.com/in/luis-felipe-rodrigues-ba473815a/"</a></a></i>
+  </div>
+  </nav>
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+<script> 
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+});
+</script>
+
+<!-- Calculadora -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="calculator">
+  <h2 class="w3-center">Aplicativo de Composição Corporal</h2>
+<p class="w3-center w3-large"><mark>Clique no tipo de sexo para abrir ou fechar:</mark></p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      
+            <form action="/action_page.php" target="_blank">
+          <form name="form1" action="#" method="post">
+    <div> <div id="flip"> <h3><mark> Masculino</mark> </h3> </div> 
+	<div id="panel">
+      Abdomen:
+      <input id="s1"  type="text"> CM <br /><br />
+	   Peitoral:
+      <input id="s2"  type="text"> CM <br /><br />
+	   Idade:
+      <input id="s3"  type="text"> CM <br /><br />
+	   Peso:
+      <input id="s4"  type="text"> KLG <br /><br />
+	   Coxa:
+      <input id="s5"  type="text"> CM <br /><br />
+          <button id="somar" onclick="somarValores()">Calcular</button><br> </div>
+          <br /><br />
+          </button>
+        </p>
+      </form>
+	<div id="flip1">  <h3><mark>Feminino</mark> </h3> </div> 
+	<div id="panel1">
+      Supra-ilíaca:
+      <input id="a1"  type="text"> CM <br /><br />
+	    Tríceps:
+      <input id="a2"  type="text"> CM <br /><br />
+	   Idade:
+      <input id="a3"  type="text"> CM <br /><br />
+	   Peso:
+      <input id="a4"  type="text"> KLG <br /><br />
+	   Coxa:
+      <input id="a5"  type="text"> CM <br /><br />
+          <button id="somar" onclick="somarValores1()">Calcular</button><br> </div>
+          <br /><br />
+          </button>
+		  <script>
+		  function iframe()
+		   alert('<iframe width ="560" height ="315" src="https://ferodrigues.github.io/calcula_massa/#calculator"></iframe>');
+		   </script>
+		   <button id="enviar" onclick="iframe()">embed</button><br> </button>
+        </p>
+    </div>
+	</div>
+   <div class="w3-half">
+         <img src="imagens/gh-hormonio-definicao-massa-muscular-618x330.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+   </div>
+
+  </div>
+</div>
+   </form>  
+      
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volte ao topo.</a>
+  <div class="w3-xlarge w3-section">
+ <a <i <a class="fa fa-facebook-official w3-hover-opacity"href="https://www.facebook.com/lfmorcegao"</a> </a> </i>
+   <a <i <a class="fa fa-instagram w3-hover-opacity"href="https://www.instagram.com/lfr_murcegao/"</a> </a></i>
+    
+  
+  <a  <i <a class="fa fa-twitter w3-hover-opacity"href="https://twitter.com/LFR_09"</a></a></i>
+   <a <i <a class="fa fa-linkedin w3-hover-opacity"href="https://www.linkedin.com/in/luis-felipe-rodrigues-ba473815a/"</a></a></i>
+  </div>
+<p><center>Site finalizado na data: <time> 2018-01-05  12:10</time> </center> </p>
+
+</footer>
+ 
+
+</body>
+</html>
